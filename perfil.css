@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+
+    background-image: url("https://images.unsplash.com/photo-1464226184884-fa280b87c399");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+}
+
+.container{
+    width: 100%;
+    max-width: 35rem;
+
+    background: rgba(255,255,255,0.95);
+
+    padding: 2rem;
+
+    border-radius: 1rem;
+
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+h1{
+    text-align: center;
+
+    color: #2e7d32;
+
+    margin-bottom: 1.5rem;
+}
+
+.perfil{
+    background-color: #f1f8e9;
+
+    padding: 1.5rem;
+
+    border-radius: 0.5rem;
+
+    margin-bottom: 1.5rem;
+}
+
+.perfil p{
+    margin-bottom: 1rem;
+
+    color: #333;
+
+    font-size: 1rem;
+}
+
+.perfil strong{
+    color: #2e7d32;
+}
+
+.btn{
+    display: block;
+
+    width: 100%;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    background-color: #2e7d32;
+
+    color: white;
+
+    padding: 0.9rem;
+
+    border-radius: 0.5rem;
+
+    font-weight: bold;
+
+    margin-bottom: 1rem;
+
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background-color: #1b5e20;
+}
+
+.sair{
+    background-color: #c62828;
+}
+
+.sair:hover{
+    background-color: #8e0000;
+}
+
+@media(max-width:768px){
+
+    .container{
+        padding: 1.5rem;
+    }
+
+    h1{
+        font-size: 1.8rem;
+    }
+
+    .perfil p{
+        font-size: 0.95rem;
+    }
+}

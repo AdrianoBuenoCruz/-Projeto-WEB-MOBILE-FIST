@@ -1,0 +1,136 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+body{
+    font-family: Arial, sans-serif;
+
+    background-image: url("https://images.unsplash.com/photo-1464226184884-fa280b87c399");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+}
+
+/* CONTAINER */
+
+.container{
+    width: 100%;
+    max-width: 40rem;
+
+    background: rgba(255,255,255,0.95);
+
+    padding: 2rem;
+
+    border-radius: 1rem;
+
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+/* TITULO */
+
+h1{
+    text-align: center;
+
+    color: #2e7d32;
+
+    margin-bottom: 1.5rem;
+}
+
+/* LABELS */
+
+label{
+    display: block;
+
+    margin-bottom: 0.4rem;
+
+    font-weight: bold;
+}
+
+/* CAMPOS */
+
+input,
+select,
+textarea{
+    width: 100%;
+
+    padding: 0.8rem;
+
+    margin-bottom: 1rem;
+
+    border: 1px solid #ccc;
+
+    border-radius: 0.5rem;
+
+    font-size: 1rem;
+}
+
+textarea{
+    resize: vertical;
+}
+
+/* BOTAO */
+
+input[type="submit"]{
+    background-color: #2e7d32;
+
+    color: white;
+
+    border: none;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover{
+    background-color: #1b5e20;
+}
+
+/* LINK VOLTAR */
+
+.voltar{
+    display: block;
+
+    text-align: center;
+
+    margin-top: 1rem;
+
+    text-decoration: none;
+
+    color: #2e7d32;
+
+    font-weight: bold;
+}
+
+.voltar:hover{
+    text-decoration: underline;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 768px){
+
+    .container{
+        padding: 1.5rem;
+    }
+
+    h1{
+        font-size: 1.8rem;
+    }
+}

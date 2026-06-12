@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Doação</title>
+    <link rel="stylesheet" href="doacao.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Cadastro de Doação</h1>
+
+        <form action="#" method="POST">
+
+            <label for="alimento">Nome do Alimento</label>
+            <input type="text" id="alimento" name="alimento" placeholder="Ex: Alface, tomate, cenoura" required>
+
+            <label for="quantidade">Quantidade</label>
+            <input type="number" id="quantidade" name="quantidade" placeholder="Ex: 10" required>
+
+            <label for="unidade">Unidade de Medida</label>
+            <select id="unidade" name="unidade" required>
+                <option value="">Selecione</option>
+                <option value="kg">Quilogramas</option>
+                <option value="unidade">Unidades</option>
+                <option value="caixa">Caixas</option>
+                <option value="saco">Sacos</option>
+            </select>
+
+            <label for="data">Data da Doação</label>
+            <input type="date" id="data" name="data" required>
+
+            <label for="descricao">Descrição</label>
+            <textarea id="descricao" name="descricao" rows="4" placeholder="Informe detalhes sobre a doação"></textarea>
+
+            <input type="submit" value="Cadastrar Doação">
+
+        </form>
+
+        <a href="index.html" class="voltar">Voltar ao Painel</a>
+
+    </div>
+
+</body>
+</html>
